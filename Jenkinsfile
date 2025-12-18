@@ -7,7 +7,7 @@ pipeline {
                 echo 'Waiting for service to initialize...' 
                 sleep time: 180, unit: 'SECONDS'
                 script {
-                    sh '''docker pull kokoatp/tesgitaction'''
+                    sh '''docker pull kokoatp/tesgitaction:main'''
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
                         docker restart se67
                     else
                         echo "Container 'se67' not found."
-                        docker run --rm -p 5643:3000 --name 67023042 -d kokoatp/tesgitaction
+                        docker run --rm -p 5643:3000 --name 67023042 -d kokoatp/tesgitaction:main
                     fi
                     '''
                 }
