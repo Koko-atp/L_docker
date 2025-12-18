@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: dockerfile
-    image: kokoatp/simpledocker
+    image: kokoatp/tesgitaction:main
     container_name: workwork
     ports:
       - "3000:3000"
