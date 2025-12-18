@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  hono:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: kokoatp/simpledocker
+    container_name: workwork
+    ports:
+      - "3000:3000"
