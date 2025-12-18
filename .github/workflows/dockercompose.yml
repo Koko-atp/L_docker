@@ -27,4 +27,4 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/ongittest:latest
+            kokoatp/ongittest:latest
