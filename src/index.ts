@@ -7,8 +7,8 @@ app.get('/', (c) => {
   return c.text('Hello Hono!')
 })
 
-app.get('/dd/:d' , (c) => {
-  return c.html('<h1> yo <h1>')
+app.get('/hello' , (c) => {
+  return c.html('<h1> 👹 <h1>')
 })
 
 
