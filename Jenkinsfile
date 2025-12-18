@@ -16,11 +16,11 @@ pipeline {
                 script {
                     sh '''
         
-                    if [ "$(docker ps -aq -f name=^/se67$)" ]; then
-                        echo "Found container 'se67'. Restarting..."
-                        docker restart se67
+                    if [ "$(docker ps -aq -f name=^/67023042$)" ]; then
+                        echo "Found container '67023042'. Restarting..."
+                        docker restart 67023042
                     else
-                        echo "Container 'se67' not found."
+                        echo "Container '67023042' not found."
                         docker run --rm -p 5643:3000 --name 67023042 -d kokoatp/tesgitaction:main
                     fi
                     '''
